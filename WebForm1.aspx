@@ -62,14 +62,10 @@
                                             <td class="auto-style9">
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                                                <asp:Label ID="Label1" runat="server" Text="Home"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-                                                <asp:Label ID="Label2" runat="server" Text="Features"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                                                <asp:Label ID="Label3" runat="server" Text="Pricing"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                                                <asp:Label ID="Label4" runat="server" Text="About"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-outline-light">Home</button>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                                                <button type="button" class="btn btn-outline-light">Features</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                                <button type="button" class="btn btn-outline-light">Pricing</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                                                <button type="button" class="btn btn-outline-light">About</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <br />
                                             </td>
                                             <td class="auto-style10">
@@ -100,7 +96,7 @@
                                                 <br />
                                                 <br />
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; User Revenue<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-outline-light">User Revenue</button> <br />
                                                 <br />
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
