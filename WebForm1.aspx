@@ -61,11 +61,11 @@
                                         <tr>
                                             <td class="auto-style9">
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-<button type="button" class="btn btn-outline-light">Home</button>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-                                                <button type="button" class="btn btn-outline-light">Features</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                                                <button type="button" class="btn btn-outline-light">Pricing</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                                                <button type="button" class="btn btn-outline-light">About</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:Button ID="Button2" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Home" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="Button3" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Features" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<asp:Button ID="Button4" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Pricing" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button5" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="About" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <br />
                                             </td>
                                             <td class="auto-style10">
@@ -96,11 +96,11 @@
                                                 <br />
                                                 <br />
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-outline-danger">User Revenue</button> <br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" CssClass="btn btn-outline-danger" OnClick="Button1_Click" Text="User Revenue" />
+                                                <br />
                                                 <br />
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <asp:Label ID="Label5" runat="server"></asp:Label>
                                                 <br />
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -141,7 +141,7 @@
                                 <td rowspan="2">&nbsp; &nbsp;</td>
                                 <td class="auto-style13">
                                     <br />
-                                    <asp:Chart ID="Chart1" runat="server">
+                                    <asp:Chart ID="Chart1" runat="server" Width="391px">
                                         <series>
                                             <asp:Series Name="Series1">
                                             </asp:Series>

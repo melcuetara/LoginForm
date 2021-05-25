@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace LoginForm
 {
@@ -11,6 +13,29 @@ namespace LoginForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+        string con = "Data Source=opstreetdb.mssql.somee.com;Initial Catalog=opstreetdb;User ID=cjmanagase22;Password=jakeMANAGASE123";
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT u.UserID, concat(u.UserLastName, ', ', u.UserFirstName) as 'Full Name', sum(p.ProSoldCount * p.ProPrice) as 'Total Revenue' FROM users u INNER JOIN businessuser ON businessuser.BusID = u.userID INNER JOIN product p ON p.ProBID = businessuser.BusID GROUP BY u.UserID";
+            SqlConnection cn = new SqlConnection(con);
+            SqlCommand cmd = new SqlCommand(sql,cn);
+            cn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while(reader.Read())
+            {
+                DataTable dt = new DataTable();
+                dt.Clear();
+                dt.Columns.Add("UserID");
+                dt.Columns.Add("Full Name");
+                dt.Columns.Add("Total Revenue");
+                object[] item = { reader["u.UserID"].ToString(), reader["Full Name"].ToString(), reader["Total Revenue"].ToString() };
+                dt.Rows.Add(item);
+                Chart1.DataSource = dt;
+                Chart1.DataBind();
+            }
+            
 
         }
     }
