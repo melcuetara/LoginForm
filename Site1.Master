@@ -55,8 +55,8 @@
     </style>
     </head>
 <body>
-    <form id="form1" runat="server">
         <div> 
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">
@@ -71,7 +71,7 @@
                                             </td>
                                             <td class="auto-style10">
                                                 <br />
-        <input class="form-control me-sm-2" type="text" placeholder="Username">
+        <input class="form-control me-sm-2" type="text" placeholder="Username" style="width: 93%">
       </form> </td>
                                             <td>&nbsp;</td>
                                         </tr>
@@ -152,6 +152,7 @@
                     </td>
                 </tr>
             </table>
+           </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
