@@ -15,13 +15,14 @@ namespace LoginForm
         {
 
         }
-        string con = "Data Source=opstreetdb.mssql.somee.com;Initial Catalog=opstreetdb;User ID=cjmanagase22;Password=jakeMANAGASE123";
+        
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string con = "Data Source=opstreetdb.mssql.somee.com;Initial Catalog=opstreetdb;User ID=cjmanagase22;Password=jakeMANAGASE123";
             string sql = "SELECT u.UserID, concat(u.UserLastName, ', ', u.UserFirstName) as 'Full Name', sum(p.ProSoldCount * p.ProPrice) as 'Total Revenue' FROM users u INNER JOIN businessuser ON businessuser.BusID = u.userID INNER JOIN product p ON p.ProBID = businessuser.BusID GROUP BY u.UserID";
             SqlConnection cn = new SqlConnection(con);
-            SqlCommand cmd = new SqlCommand(sql,cn);
             cn.Open();
+            SqlCommand cmd = new SqlCommand(sql,cn);
             SqlDataReader reader = cmd.ExecuteReader();
             while(reader.Read())
             {
