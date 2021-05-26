@@ -46,7 +46,7 @@ namespace LoginForm
                     y[i] = Convert.ToInt32(dt.Rows[i][1]);
                 }
                 Chart1.Series[0].Points.DataBindXY(x, y);
-                Chart1.Series[0].ChartType = SeriesChartType.StackedColumn;
+                Chart1.Series[0].ChartType = SeriesChartType.Pie;
             }
         }
 
