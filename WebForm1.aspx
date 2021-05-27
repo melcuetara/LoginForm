@@ -100,20 +100,20 @@
                                                 <br />
                                                 <br />
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" CssClass="btn btn-outline-danger" OnClick="Button1_Click" Text="User Revenue" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="adminBtns" runat="server" CssClass="btn btn-outline-danger" OnClick="adminBtns_Click" Text="Admins" />
                                                 <br />
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                                                <asp:Button ID="adminBtns" runat="server" CssClass="btn btn-outline-danger" OnClick="adminBtns_Click" Text="Admins" />
+                                                <asp:Button ID="Button1" runat="server" CssClass="btn btn-outline-danger" OnClick="Button1_Click" Text="Monthly Report" />
                                                 <br />
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <asp:Button ID="Button6" runat="server" CssClass="btn btn-outline-danger" OnClick="Button6_Click" Text="User Revenue" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <asp:Button ID="Button6" runat="server" CssClass="btn btn-outline-danger" OnClick="Button6_Click" Text="Users Revenue" />
                                                 <br />
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button7" runat="server" CssClass="btn btn-outline-danger" OnClick="Button7_Click" Text="Yearly Revenue" />
                                                 <br />
                                                 <br />
-                                                <br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button8" runat="server" CssClass="btn btn-outline-danger" OnClick="Button8_Click" Text="Business Revenue" />
                                                 <br />
                                                 <br />
                                                 <br />
