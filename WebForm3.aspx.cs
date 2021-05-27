@@ -11,12 +11,12 @@ namespace LoginForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = Request.Cookies["UsersToWebForm3"].Value;
+            Label1.Text = Request.Cookies["Users"].Value;
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            HttpCookie cokie = new HttpCookie("UsersToWebForm3");
+            HttpCookie cokie = new HttpCookie("Users");
             cokie.Value = Label1.Text;
             Response.Cookies.Add(cokie);
             cokie.Expires = DateTime.Now.AddDays(1);
@@ -25,7 +25,7 @@ namespace LoginForm
 
         protected void Button6_Click(object sender, EventArgs e)
         {
-            HttpCookie cokie = new HttpCookie("UsersToWebForm3");
+            HttpCookie cokie = new HttpCookie("Users3");
             cokie.Value = Label1.Text;
             Response.Cookies.Add(cokie);
             cokie.Expires = DateTime.Now.AddDays(1);
