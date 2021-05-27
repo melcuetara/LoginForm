@@ -45,7 +45,11 @@
             height: 61px;
         }
          .auto-style13 {
-             height: 747px;
+             height: 377px;
+             width: 275px;
+         }
+         .auto-style14 {
+             width: 275px;
          }
     </style>
 </asp:Content>
@@ -150,7 +154,9 @@
                                             </asp:ChartArea>
                                         </ChartAreas>
                                     </asp:Chart>
-                                    <asp:GridView ID="GridView1" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
+                                    <br />
+                                    <asp:Label ID="Label1" runat="server" Enabled="False" ForeColor="Black" Text="Statistical Graph"></asp:Label>
+                                    <asp:GridView ID="GridView1" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Width="296px">
                                         <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
                                         <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
                                         <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
@@ -165,7 +171,7 @@
                                 <td rowspan="2">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>&nbsp;<br />
+                                <td class="auto-style14">&nbsp;<br />
                                     <br />
                                     &nbsp;</td>
                             </tr>
