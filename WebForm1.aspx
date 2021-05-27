@@ -156,7 +156,6 @@
                                         </ChartAreas>
                                     </asp:Chart>
                                     <br />
-                                    <asp:Label ID="Label1" runat="server" Enabled="False" ForeColor="Black" Text="Statistical Graph"></asp:Label>
                                     <asp:GridView ID="GridView1" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" Width="296px">
                                         <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
                                         <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
