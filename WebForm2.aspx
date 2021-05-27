@@ -178,20 +178,20 @@
                                                 <h3>&nbsp; Log In</h3>&nbsp;&nbsp; <table class="auto-style20">
                                                     <tr>
                                                         <td><div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">&nbsp; Email address</label>
-      <input type="email" class="auto-style23" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                            &nbsp; Email address&nbsp;
+                                                            <asp:TextBox ID="userTextbox" runat="server" CssClass="auto-style23"></asp:TextBox>
       <small id="emailHelp" class="form-text text-muted">&nbsp; We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1" class="form-label mt-4">&nbsp; Password</label>
-      <input type="password" class="auto-style23" id="exampleInputPassword1" placeholder="Password">
+        &nbsp; Password&nbsp;
+        <asp:TextBox ID="passwordTextbox" runat="server" CssClass="auto-style23" TextMode="Password"></asp:TextBox>
     </div>&nbsp;</td>
                                                     </tr>
                                                 </table>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                                                <button type="button" class="btn btn-danger" style="width: 228px">Log In</button><br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" CssClass="btn btn-danger" OnClick="Button1_Click" Text="Login" Width="228px" />
+                                                <br />
                                                 <br />
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;

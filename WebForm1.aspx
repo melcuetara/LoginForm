@@ -67,19 +67,19 @@
                                                 <br />
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:Button ID="Button2" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Home" />
                                                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="Button3" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Features" />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<asp:Button ID="Button4" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Pricing" />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button5" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="About" />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:Button ID="Button5" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="About" />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <br />
                                             </td>
                                             <td class="auto-style10">
                                                 <br />
                                                 <br />
-                                                <input class="form-control me-sm-2" type="text" placeholder="Username"><br />
+                                                <asp:Label ID="userNameLabel" runat="server"></asp:Label>
+                                                <br />
                                             </td>
                                             <td>
                                                 <br />
-                                               <button class="btn btn-secondary my-2 my-sm-0" type="submit">____</button>
+                                                <asp:Button ID="loginBtn" runat="server" CssClass="btn btn-outline-light" Text="Logout" OnClick="loginBtn_Click" />
                                              </td>
                                         </tr>
                                     </table>
@@ -103,13 +103,14 @@
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" CssClass="btn btn-outline-danger" OnClick="Button1_Click" Text="User Revenue" />
                                                 <br />
                                                 <br />
-                                                <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <br />
-                                                <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                                                <asp:Button ID="adminBtns" runat="server" CssClass="btn btn-outline-danger" OnClick="adminBtns_Click" Text="Admins" />
                                                 <br />
                                                 <br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <asp:Button ID="Button6" runat="server" CssClass="btn btn-outline-danger" OnClick="Button6_Click" Text="User Revenue" />
+                                                <br />
+                                                <br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <br />
                                                 <br />
                                                 <br />
@@ -144,7 +145,7 @@
                                 <td rowspan="2">&nbsp; &nbsp;</td>
                                 <td class="auto-style13">
                                     <br />
-                                    <asp:Chart ID="Chart1" runat="server">
+                                    <asp:Chart ID="Chart1" runat="server" EnableTheming="True">
                                         <Series>
                                             <asp:Series Name="Series1">
                                             </asp:Series>
