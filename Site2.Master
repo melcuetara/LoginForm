@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="LoginForm.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <header>
+                    <aside>
+                        <asp:Panel ID="Panel1" runat="server" BackColor="#FF9933" Height="1014px" Width="40%" CssClass="cjside"></asp:Panel>
+                    </aside>
+                </header>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
