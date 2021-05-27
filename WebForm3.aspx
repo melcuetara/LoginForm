@@ -12,6 +12,9 @@
     width: 100%;
     height: 100%;
   }
+  .esudpikas{
+      position:center;
+  }
   </style>
     <table class="auto-style1">
                 <tr>
@@ -55,14 +58,14 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="bg3.jpg" alt="Los Angeles" width="1100" height="500">
+      <img src="bg3.jpg" alt="Los Angeles" width="500" height="500">
       <div class="carousel-caption">
         <h3>Los Angeles</h3>
         <p>We had such a great time in LA!</p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+        <asp:Image ID="Image1" runat="server" width="900" height="500" ImageUrl="~/css/LOGOOp.png" CssClass="esudpikas" />
       <div class="carousel-caption">
         <h3>Chicago</h3>
         <p>Thank you, Chicago!</p>
