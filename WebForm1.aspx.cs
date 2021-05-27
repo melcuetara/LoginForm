@@ -164,7 +164,7 @@ namespace LoginForm
         }
         protected void Button2_Click1(object sender, EventArgs e)
         {
-            HttpCookie cokie = new HttpCookie("UsersToWebForm3");
+            HttpCookie cokie = new HttpCookie("Users");
             cokie.Value = userNameLabel.Text;
             Response.Cookies.Add(cokie);
             cokie.Expires = DateTime.Now.AddDays(1);
@@ -173,7 +173,7 @@ namespace LoginForm
 
         protected void Button5_Click(object sender, EventArgs e)
         {
-            HttpCookie cokie = new HttpCookie("UsersToWebForm3");
+            HttpCookie cokie = new HttpCookie("Users");
             cokie.Value = userNameLabel.Text;
             Response.Cookies.Add(cokie);
             cokie.Expires = DateTime.Now.AddDays(1);
