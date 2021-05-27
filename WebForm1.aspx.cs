@@ -162,5 +162,22 @@ namespace LoginForm
                 Chart1.Series[0].ChartType = SeriesChartType.Column;
             }
         }
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            HttpCookie cokie = new HttpCookie("UsersToWebForm3");
+            cokie.Value = userNameLabel.Text;
+            Response.Cookies.Add(cokie);
+            cokie.Expires = DateTime.Now.AddDays(1);
+            Response.Redirect("WebForm3.aspx");
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            HttpCookie cokie = new HttpCookie("UsersToWebForm3");
+            cokie.Value = userNameLabel.Text;
+            Response.Cookies.Add(cokie);
+            cokie.Expires = DateTime.Now.AddDays(1);
+            Response.Redirect("WebForm1.aspx");
+        }
     }
 }
