@@ -23,22 +23,12 @@
                                         <tr>
                                             <td class="auto-style9">
                                                 <br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:Button ID="Button2" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Home" />
-                                                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="Button3" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="Features" />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:Button ID="Button5" runat="server" CssClass="btn btn-outline-light" OnClick="Button1_Click" Text="About" />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <br />
                                             </td>
                                             <td class="auto-style10">
                                                 <br />
-                                                <br />
-                                                <asp:Label ID="userNameLabel" runat="server"></asp:Label>
-                                                <br />
-                                            </td>
-                                            <td>
-                                                <br />
-                                                <asp:Button ID="loginBtn" runat="server" CssClass="btn btn-outline-light" Text="Logout" OnClick="loginBtn_Click" />
-                                             </td>
+        &nbsp;</form></td>
+                                            <td>&nbsp;</td>
                                         </tr>
                                     </table>
                                     <br />
@@ -51,40 +41,41 @@
                     <td class="auto-style2">
                         <table class="auto-style4">
                             <tr>
-                                
-                                <td rowspan="2">&nbsp; &nbsp;</td>
-                                <td class="auto-style13">
-                                    <br />
-                                    <br />
+                                <td class="auto-style5">
+                                    <table class="auto-style6">
+                                        
+                                    </table>
                                 </td>
-                                <td rowspan="2">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <br />
-                                    <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
+                                <td>&nbsp;</td>
+                                <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
     <li data-target="#demo" data-slide-to="2"></li>
   </ul>
-  
-  <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
+      <img src="bg3.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
     </div>
     <div class="carousel-item">
       <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
     </div>
     <div class="carousel-item">
       <img src="ny.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
     </div>
   </div>
-  
-  <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </a>
@@ -92,7 +83,6 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-                                    </td>
                             </tr>
                         </table>
                     </td>
