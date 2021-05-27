@@ -172,7 +172,11 @@
                                             <td>
             
                            
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;<br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 <h3>&nbsp; Log In</h3>&nbsp;&nbsp; <table class="auto-style20">
                                                     <tr>
                                                         <td><div class="form-group">
@@ -204,6 +208,11 @@
                                                 <br />
                                                 &nbsp;&nbsp; New to Opportunity Street?&nbsp;
                                                 <asp:Label ID="Label3" runat="server" ForeColor="#FF9900" Text="Sign In"></asp:Label>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
                                                 <br />
                                                 <br />
                                                 <br />
