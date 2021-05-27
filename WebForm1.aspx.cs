@@ -54,5 +54,39 @@ namespace LoginForm
         {
             
         }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT CONCAT(CONCAT(u.UserFirstName,' '),u.UserLastName) as 'Full Name',  SUM(ProPrice * ProSoldCount) AS 'Gross Sales' FROM opportunitydb.users u INNER JOIN opportunitydb.businessuser bu ON bu.UserID = u.UserID INNER JOIN opportunitydb.product p ON p.ProBID = bu.BusID GROUP BY u.UserFirstName, u.UserLastName, p.ProBID ORDER BY SUM(ProPrice* ProSoldCount)";
+            string sm = ConfigurationManager.ConnectionStrings["DBMC"].ConnectionString;
+            using (SqlConnection cn = new SqlConnection(sm))
+            {
+                cn.Open();
+                DataSet ds = new DataSet();
+                DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                SqlDataAdapter d = new SqlDataAdapter(cmd);
+                d.Fill(dt);
+                d.Fill(ds);
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+                Chart1.DataSource = ds;
+                string[] x = new string[dt.Rows.Count];
+                int[] y = new int[dt.Rows.Count];
+
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    x[i] = dt.Rows[i][0].ToString();
+                    y[i] = Convert.ToInt32(dt.Rows[i][1]);
+                }
+                Chart1.Series[0].Points.DataBindXY(x, y);
+                Chart1.Series[0].ChartType = SeriesChartType.Pie;
+            }
+        }
+
+        protected void Chart1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
