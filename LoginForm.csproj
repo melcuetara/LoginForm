@@ -68,6 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\1_Front_Display.png" />
+    <Content Include="css\23_Home_Business.png" />
+    <Content Include="css\24_Home_Service.png" />
+    <Content Include="css\28_Payment_Method.png" />
     <Content Include="css\bg3.jpg" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
